@@ -50,7 +50,7 @@ add_executable(
   src/data_to_ros2.cpp
 )
 
-if($ENV{ROS_DISTRO} MATCHES "humble|rolling")
+if($ENV{ROS_DISTRO} MATCHES "iron|humble|rolling")
   rosidl_get_typesupport_target(
     cpp_typesupport_target
     ${PROJECT_NAME} "rosidl_typesupport_cpp"
